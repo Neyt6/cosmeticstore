@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 10px;
+    background: #efc9e0;
+}
+
+.navBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navBar a{
+    color: rgb(61, 61, 61);
+    text-decoration:none;
+    font-size: 20px;
+}
+
+.navBar a:hover{
+    background-color: #e6b0d0;
+    border-radius: 5px;
+}

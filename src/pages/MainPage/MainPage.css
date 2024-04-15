@@ -1,0 +1,43 @@
+.contaner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    width: 70%;
+}
+
+.titleText {
+    font-family: Inter, Arial;
+    font-size: 36px;
+}
+
+.products {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.productImage {
+    width: 300px;
+    height: 300px;
+}
+
+.productButton {
+    margin-top: 10px;
+
+    background-color: white;
+    border-radius: 20px;
+    border: 1px groove black;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.productButton:hover {
+    color: gray;
+    border-color: gray;
+    cursor: pointer;
+}
