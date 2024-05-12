@@ -4,7 +4,6 @@ import pimage from "../../images/shampoo.png"
 const images = [
   { url: '../../images/image1.png' },
   { url: pimage },
-  
 ];
 
 const Slider = () => {

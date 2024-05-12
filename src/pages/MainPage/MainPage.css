@@ -12,6 +12,7 @@
 .titleText {
     font-family: Inter, Arial;
     font-size: 36px;
+    padding: 20px 0 20px 0;
 }
 
 .products {
@@ -40,4 +41,25 @@
     color: gray;
     border-color: gray;
     cursor: pointer;
+}
+
+.advantages-section {
+    padding-top: 20px;
+}
+
+.advantage {
+    display: inline-block;
+   
+    text-align: center;
+    margin: 10px;
+    width: 30%;
+}
+
+.advantage-subtitle{
+    font-size: 18px;
+
+}
+
+.advantage-description {
+    color: gray;
 }
