@@ -22,9 +22,14 @@
     flex-wrap: wrap;
 }
 
+.product {
+    max-width: 32vh;
+    height: 450px;
+}
+
 .productImage {
-    width: 300px;
-    height: 300px;
+    width: 32vh;
+    height: 32vh;
 }
 
 .productButton {
@@ -35,6 +40,7 @@
     border: 1px groove black;
     font-size: 20px;
     padding: 5px 10px;
+
 }
 
 .productButton:hover {
@@ -49,17 +55,37 @@
 
 .advantage {
     display: inline-block;
-   
+
     text-align: center;
-    margin: 10px;
     width: 30%;
+
+    margin-bottom: 50px;
 }
 
-.advantage-subtitle{
+.advantage-subtitle {
     font-size: 18px;
-
 }
 
 .advantage-description {
     color: gray;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #d1d1d1;
+
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.icons {
+    width: 35px;
+    padding-right: 5px;
+}
+
+.numberBlock {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
 }

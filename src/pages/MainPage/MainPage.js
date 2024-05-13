@@ -1,19 +1,21 @@
 import React, { useState } from "react";
-
 import "./MainPage.css"
-import Product from "./Product";
-
 import Slider from "./imageSlider";
+
+import Product from "./Product";
 import Popup from "../Popup/Popup";
+
 import products from "./products";
+import Footer from "./Footer";
 
 const MainPage = () => {
 
     const [popup, setActivePopup] = useState(false)
     const [popupСontent, setPopupСontent] = useState("")
+    let products2 = products.slice(0, 4)
 
-    const openPopup = (text) => {
-        setPopupСontent(text)
+    const openPopup = (popupСontent) => {
+        setPopupСontent(popupСontent)
         setActivePopup(true)
     }
 
@@ -25,7 +27,7 @@ const MainPage = () => {
                 Рекомендуем
             </div>
             <div className="content products">
-                {products.map(item => <Product
+                {products2.map(item => <Product
                     image={item.image}
                     product={item.product}
                     price={item.price}
@@ -48,12 +50,14 @@ const MainPage = () => {
                 <div className="advantage">
                     ⚙️
                     <div className="advantage-subtitle">Персонализация</div>
-                    <div className="advantage-description">Учитываем индивидуальные потребности и предпочтения</div>
+                    <div className="advantage-description">Учитываем индивидуальные потребности покупателя</div>
                 </div>
             </div>
 
+            <Footer />
+
             <Popup active={popup} setActive={setActivePopup}>
-                <div>{popupСontent.image}</div>
+                <img src={popupСontent.image} className="productImage" alt=""></img>
                 <div>{popupСontent.product}</div>
                 <div>{popupСontent.price}</div>
             </Popup>

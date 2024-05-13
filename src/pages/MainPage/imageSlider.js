@@ -1,9 +1,10 @@
 import SimpleImageSlider from "react-simple-image-slider";
-import pimage from "../../images/shampoo.png"
+import image1 from "../../images/image.png"
+import image2 from "../../images/image2.png"
 
 const images = [
-  { url: '../../images/image1.png' },
-  { url: pimage },
+  { url: image1 },
+  { url: image2 },
 ];
 
 const Slider = () => {
@@ -11,12 +12,12 @@ const Slider = () => {
     <div>
       <SimpleImageSlider
         width={1000}
-        height={500}
+        height={499}
         images={images}
-        showBullets={true}
+        showBullets={false}
         showNavs={true}
         autoPlay={true}
-        autoPlayDelay={4}
+        autoPlayDelay={5}
       />
     </div>
   );

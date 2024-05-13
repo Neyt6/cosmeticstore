@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import Popup from "../Popup/Popup";
 import products from "../MainPage/products";
 import Product from "../MainPage/Product";
+import Footer from "../MainPage/Footer";
 
 const SalePage = () => {
 
@@ -27,6 +28,9 @@ const SalePage = () => {
                     click={() => openPopup(item)}
                 />)}
             </div>
+
+            <Footer />
+
             <Popup active={popup} setActive={setActivePopup}>
                 <div>{popupСontent.image}</div>
                 <div>{popupСontent.product}</div>
