@@ -32,9 +32,14 @@ const SalePage = () => {
             <Footer />
 
             <Popup active={popup} setActive={setActivePopup}>
-                <div>{popupСontent.image}</div>
-                <div>{popupСontent.product}</div>
-                <div>{popupСontent.price}</div>
+                <div className="popupProduct ">
+                    <img src={popupСontent.image} className="popupProductImage" alt=""></img>
+                    <div className="popupTextBlock">
+                        <div className="popupTitle">{popupСontent.product}</div>
+                        <div className="popupDesc">{popupСontent.description}</div>
+                        <div className="popupTitle">Цена {popupСontent.price} руб.</div>
+                    </div>
+                </div>
             </Popup>
         </div>
     )

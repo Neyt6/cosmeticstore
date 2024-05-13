@@ -89,3 +89,28 @@
     align-items: center;
     padding-bottom: 10px;
 }
+
+.popupProduct {
+    display: flex;
+    flex-direction: row;
+}
+
+.popupProductImage {
+    width: 50vh;
+    height: 50vh;
+}
+
+.popupTextBlock{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.popupTitle{
+    font-size: 30px;
+}
+
+.popupDesc{
+    color: rgb(88, 88, 88);
+}
