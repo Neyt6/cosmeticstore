@@ -12,12 +12,24 @@ const MainPage = () => {
 
     const [popup, setActivePopup] = useState(false)
     const [popupСontent, setPopupСontent] = useState("")
-    let products2 = products.slice(0, 4)
 
     const openPopup = (popupСontent) => {
         setPopupСontent(popupСontent)
         setActivePopup(true)
     }
+
+    function getRandomElements(arr, num = 4) {
+        let copiedArray = [...arr];
+
+        for (let i = copiedArray.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [copiedArray[i], copiedArray[j]] = [copiedArray[j], copiedArray[i]];
+        }
+
+        return copiedArray.slice(0, num);
+    }
+
+    let products2 = getRandomElements(products)
 
     return (
         <div className="contaner">
