@@ -19,7 +19,7 @@ const Footer = () => {
                     <img src={micon} alt="" className="icons" />
                     cosmetic@store.com
                 </div>
-                <div></div><br />
+                <div>г. Таганрог ул. Петровская 71, 347900</div><br />
 
                 <div>© 2024 Все права защищены</div>
             </div>
