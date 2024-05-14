@@ -4,7 +4,7 @@ import "./Popup.css"
 const Popup = ({ active, setActive, children }) => {
 
     return (
-        <div div className={active ? "popup" : "disable"} onClick={() => setActive(false)}>
+        <div className={active ? "popup" : "disable"} onClick={() => setActive(false)}>
             <div className="shadow popupWindow">
                 {children}
             </div>

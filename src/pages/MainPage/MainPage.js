@@ -27,7 +27,8 @@ const MainPage = () => {
                 Рекомендуем
             </div>
             <div className="content products">
-                {products2.map(item => <Product
+                {products2.map((item, id) => <Product
+                    key={id}
                     image={item.image}
                     product={item.product}
                     price={item.price}

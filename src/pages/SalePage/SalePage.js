@@ -21,7 +21,8 @@ const SalePage = () => {
                 Цены
             </div>
             <div className="content products">
-                {products.map(item => <Product
+                {products.map((item, id) => <Product
+                    key={id}
                     image={item.image}
                     product={item.product}
                     price={item.price}
